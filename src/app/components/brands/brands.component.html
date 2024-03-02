@@ -1,0 +1,11 @@
+<section class="container">
+    <div class="row g-4  mx-auto">
+        <div  *ngFor=" let brand of brands"  class="col-md-3 col-sm-6">
+            <div [routerLink]="['/modal', brand._id]" role="button" class="border border-success rounded Shadow p-2">
+                <img [src]="brand.image" [alt]="brand.name" class="w-100">
+                <h3 class="text-center h5 fs-6">{{brand.name}}</h3>
+            </div>
+        </div>
+    </div>
+
+</section>

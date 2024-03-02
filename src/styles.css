@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+.rating-color {
+  color: #ffc908;
+}
+
+.main-btn {
+  background-color: #0aad0a !important;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: unset;
+  cursor: pointer;
+}
+.main-btn:disabled {
+  background-color: rgba(10, 173, 10, 0.4117647059);
+  color: rgba(255, 255, 255, 0.3568627451);
+  cursor: not-allowed;
+}
+
+.active-link {
+  background-color: #0aad0a !important;
+  color: #fff !important;
+  border-radius: 5px;
+}
+
+.text-main {
+  color: #0aad0a;
+}
+
+.bg-main-light {
+  background-color: #f0f3f2;
+}
+
+.product {
+  border-radius: 5px;
+  border: 1px solid #0aad0a;
+  transition: box-shadow 0.5s;
+  overflow: hidden;
+}
+.product .btn-main {
+  transform: translateY(150%);
+  transition: transform 0.7s;
+  background-color: #0aad0a !important;
+}
+
+.product:hover .btn-main {
+  transform: translateY(0);
+}/*# sourceMappingURL=styles.css.map */

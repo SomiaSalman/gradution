@@ -1,0 +1,12 @@
+<section *ngIf="categorydetails._id">
+    <div class="row g-4 w-75 mx-auto rounded Shadow bg-main-light p-3 my-5">
+        <div class="col-md-6">
+            <div>
+                <img [src]="categorydetails.image" [alt]="categorydetails.name" class="w-100">
+            </div>
+        <div class="col-md-6">
+            <h2>{{categorydetails.name}}</h2>
+        </div>
+        </div>
+    </div>
+</section>

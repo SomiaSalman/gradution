@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img src="./assets/images/freshcart-logo.svg" alt="">
+        </a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+               
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active-link" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active-link" routerLink="/cart">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active-link" routerLink="/products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active-link" routerLink="/wishlist">WishList</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active-link" routerLink="/categories">category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active-link" routerLink="/brands">brands</a>
+                </li>
+               
+            </ul>
+           
+
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 d-flex align-items-center">
+
+                <!-- wishlist--- -->
+                <li class="nav-item">
+                    <a class="nav-link position-relative" routerLink="/wishlist">
+                        <i class="fa-solid fa-heart fa-2x text-danger"></i>
+                        <span class="main-btn position-absolute top-0 end-0 rounded-3 px-1 p-0" width="5px" height="2px">
+                            {{favCount}}
+                        </span>
+                    </a>
+                </li>
+                <!-- cart icon -->
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" routerLink="/cart">
+                        <i class="fas fa-cart-shopping fa-2x"></i>
+                        <span class="main-btn position-absolute top-0 end-0 rounded-3 px-1 p-0" width="5px" height="2px">
+                            {{cartDetails}}
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="button">
+                    <i class="fab  fa-facebook fa-xl me-3"></i>
+                    <i class="fab  fa-linkedin ffa-xl me-3"></i>
+                    <i class="fab  fa-instagram fa-xl me-3"></i>
+                    <i class="fab  fa-youtube fa-xl me-3"></i>
+                </li>
+
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-user fa-xl  text-main"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li routerLink="/forgetpassword" routerLinkActive="active-link" role="button"><a class="dropdown-item">Forget Password</a></li>
+                      
+                    </ul>
+                  </li>
+                <li class="nav-item" role="button">
+                    <span class="nav-link cursor-pointer" (click)="logoutUser()">Sign Out</span>
+                </li>
+               
+               
+            </ul>
+            
+        </div>
+    </div>
+
+</nav>
+

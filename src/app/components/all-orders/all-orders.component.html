@@ -1,0 +1,22 @@
+<section class="w-75 mx-auto bg-main-light p-3 rounded-3 my-2">
+    <h1>all orders</h1>
+    <p class="text-main"></p>
+
+    <div class="row border-bottom py-2"    >
+        <div class="col-md-2">
+            <img [src]="allorders.imageCover" class="w-100" alt="">
+        </div>
+
+        <div class="col-md-10 d-flex justify-content-between">
+            <!-- details -->
+            <div>
+                <h5>{{allorders.product.title}}</h5>
+                <p class="text-main m-0">Price: {{allorders.price}}</p>
+                <button class="btn p-0 m-0" ><i class="fa-regular fa-trash-can me-1 text-danger"></i>Remove</button>
+            </div>
+           
+           
+
+        </div>
+    </div>
+</section>
